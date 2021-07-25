@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/logo/tecla-ico.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Pianíssimo</title>
+</head>
+<body>
+    <div class="container">
+        
+        <header>
+            <img src="./assets/logo/logo.png" alt="logo" class="img-logo">
+            <h1 class="text-header">CADASTRO DE PRODUTOS E CLIENTES</h1>
+            <div class="cart">
+                <img src="./assets/cart/cart-icon.png" width="50px">
+                <span class="text-header" id="contadorCart">0</span>
+            </div>
+        </header>
+
+            <section class="section-one">
+                <div class="formContainer">
+                    <h2 class="mb">Bem vindo ao sistema de cadastro</h2>
+                    <p class="mb">Faça seu cadastro e selecione os produtos para entrarmos em contato para finalizar a compra!</p>
+                    <form id="form">
+                        <input id="nome" name="name" type="text" placeholder="Nome">
+                        <input id="email" name="email" type="email" placeholder="Email">
+                        <input id="telefone" name="telefone" type="tel" placeholder="Telefone">
+                        <input type="submit" value="CADASTRAR" class="btn">
+                    </form>
+                    <p class="finalizado"id="finalizado"></p>
+                </div>
+            </section>
+
+        <section class="section-two">
+            <div class="card-container" id="card-container">
+                <div class="card">
+                    
+                    <h3 class="product-name" id="product-name1">Piano Schimmel</h3>
+                    <img class="img-card" src="./assets/card/schimel.png">
+                    <span class="price" id="de1"><s>De: R$50.000,00</s></span>
+                    <span class="price" id="por1">Por: R$25.000,00</span>
+                    <button id="btnProduto1" onclick="reloadCart()">Adicionar ao carrinho</button>
+                   
+                </div>
+                
+                <div class="card">
+                    
+                    <h3 class="product-name" id="product-name2">Piano Vertical Essex</h3>
+                    <img class="img-card" src="./assets/card/yamaha.png">
+                    <span class="price" id="de2"><s>De: R$30.000,00</s></span>
+                    <span class="price" id="por2">Por: R$15.000,00</span>
+                    <button id="btnProduto2" onclick="reloadCart()">Adicionar ao carrinho</button>
+                   
+                </div>
+        
+                <div class="card">
+                    
+                    <h3 class="product-name" id="product-name3">Piano Essex</h3>
+                    <img class="img-card" src="./assets/card/essex.png">
+                    <span class="price" id="de3"><s>De: R$67.000,00</s></span>
+                    <span class="price" id="por3">Por: R$33.500,00</span>
+                    <button id="btnProduto3" onclick="reloadCart()">Adicionar ao carrinho</button>
+
+                </div>
+        
+                
+            </div>
+
+        </section>
+
+        <footer>
+            <p>Desenvolvido por Suzi Nogueira para o Hiring Coders.</p>
+        </footer>
+
+        <script src="./js/script.js"></script>
+
+    </div>
+</body>
+</html>
